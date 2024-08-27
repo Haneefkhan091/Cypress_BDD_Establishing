@@ -1,0 +1,21 @@
+{
+  "name": "cypress_code_fixes",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",  
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.2",
+    "cypress": "^13.13.3",
+    "cypress-mochawesome-reporter": "^3.2.0"
+  },
+  "cypress-cucumber-preprocessor": {
+  "nonGlobalStepDefinitions": true,
+  "stepDefinitions" : "cypress/e2e/step_definitions/**/*.js"
+  }
+}
